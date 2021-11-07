@@ -44,7 +44,7 @@ uint FindNeighbours(PLANE &x, uint i, uint j){
     PLANE w(WINDOW_SIZE, vector<bool>(WINDOW_SIZE, 0));
     for(uint k = 0; k < WINDOW_SIZE; k++){
         for(uint n = 0; n < WINDOW_SIZE; n++){
-            if((!i && !k) || (!j && !n) || (i == PLANE_SIZE-1 && k == WINDOW_SIZE-1) || (j == PLANE_SIZE-1 && n == WINDOW_SIZE-1)){ //if(i == 0 || j == 0 || i == PLANE_SIZE || j == PLANE_SIZE){
+            if((!i && !k) || (!j && !n) || (i == PLANE_SIZE-1 && k == WINDOW_SIZE-1) || (j == PLANE_SIZE-1 && n == WINDOW_SIZE-1)){
                 continue;
             }
             else{
